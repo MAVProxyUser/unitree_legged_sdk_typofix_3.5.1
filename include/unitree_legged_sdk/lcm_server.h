@@ -59,7 +59,7 @@ void Lcm_Server_Low::RobotControl()
 class Lcm_Server_High
 {
 public:
-    Lcm_Server_High(): udp(8090, "192.168.123.161", 8082, sizeof(HighCmd), sizeof(HighState)), mylcm(HIGHLEVEL){
+    Lcm_Server_High(): udp(8090, "192.168.12.1", 8082, sizeof(HighCmd), sizeof(HighState)), mylcm(HIGHLEVEL){
         udp.InitCmdData(cmd);
     }
     void UDPRecv(){
