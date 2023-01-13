@@ -60,6 +60,7 @@ void Custom::RobotControl()
     cmd.velocity[1] = 0.0f;
     cmd.yawSpeed = 0.0f;
     cmd.reserve = 0;
+    cmd.levelFlag = 0;
 
     if(motiontime > 0 && motiontime < 1000){
         cmd.mode = 1;
